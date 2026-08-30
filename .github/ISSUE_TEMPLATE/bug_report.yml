@@ -1,0 +1,41 @@
+name: Bug report
+description: Something behaves differently from what it says it does
+labels: ["bug"]
+body:
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations: { required: true }
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+    validations: { required: true }
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce it
+      placeholder: |
+        1.
+        2.
+        3.
+    validations: { required: true }
+  - type: input
+    id: scope
+    attributes:
+      label: What it affects
+      placeholder: Which repository, service or account
+  - type: dropdown
+    id: live
+    attributes:
+      label: Does this touch a live client account?
+      options: ["No", "Yes", "Not sure"]
+    validations: { required: true }
+  - type: checkboxes
+    id: hygiene
+    attributes:
+      label: Before you submit
+      options:
+        - label: This contains no credentials, tokens or client data
+          required: true

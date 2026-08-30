@@ -1,0 +1,25 @@
+name: Task
+description: A piece of work to be built
+labels: ["task"]
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What is true once this is done?
+    validations: { required: true }
+  - type: textarea
+    id: why
+    attributes:
+      label: Why now
+    validations: { required: true }
+  - type: textarea
+    id: done
+    attributes:
+      label: How we will know it worked
+      description: The check, receipt or test that proves it.
+    validations: { required: true }
+  - type: textarea
+    id: outofscope
+    attributes:
+      label: Explicitly out of scope

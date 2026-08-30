@@ -1,0 +1,8 @@
+# Dependabot is per-repository and is NOT inherited from this repo.
+# Copy this file into each new repository.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule: { interval: "weekly" }
+    open-pull-requests-limit: 5
