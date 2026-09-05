@@ -15,6 +15,10 @@ One approved plan becomes many markets, assets and launch conditions. We build i
 
 Campaign delivery · Tagging and analytics · Website maintenance
 
+### Open research
+
+[AI paid-media tools](https://github.com/The-Detail-Department/ai-paid-media-tools) is our evidence-backed production-readiness index for MCP servers, advertising APIs and automation workflows.
+
 ### How we work
 
 One person builds. A different person checks. Nobody signs off their own work, and that includes the founder.
