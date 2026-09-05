@@ -1,22 +1,23 @@
 # Contributing
 
-## The one rule
+## Working context
 
-**One person builds. A different person checks. Nobody merges their own work.**
-
-This is not a code-review preference. It is how the whole operation runs, and it applies here without exception.
+Read the selected repository's `AGENTS.md`, `README.md` and relevant product
+specifications. The current task and supplied working agreement govern authority.
+Keep product policy in its owning repository; these defaults describe shared practice.
 
 ## Before you start
 
-Open an issue first. A pull request that arrives without one is usually a pull request built against the wrong assumption.
-
-Say what you are changing, why, and how you will know it worked.
+Use an issue or the user's task as the work reference. Name the outcome, current
+base commit, owned files and validation before editing. Check dirty paths,
+worktrees and open PRs; preserve active work and use an isolated task branch.
 
 ## Branches
 
-- `main` is protected and always deployable
-- Branch from `main`: `type/short-description` — `fix/consent-mode-firing`, `feat/plan-versioning`
-- Rebase before opening a pull request
+- Branch from current `origin/main`: `type/short-description`.
+- Fetch and recheck a moving base before integration; preserve shared branches.
+- Verify actual repository rules. Guidance and green CI do not establish an
+  enforced protection, publication approval or a deployable artifact.
 
 ## Commits
 
@@ -28,11 +29,31 @@ Write the subject so it completes the sentence "this commit will…".
 
 - Small enough that a reviewer can hold it in their head
 - Description explains the change and how it was verified
-- Green checks before review, not after
-- A reviewer who did not write the code
+- Appropriate checks, with exact commands and results
+- Independent review of the current head, clearly attributed
+- Existing merge/deployment authority and any remaining live checks
+
+An agent reviewing its own change is not an independent review. A separate
+reviewer may be used when the task authorizes it; record its scope and limitations.
+Merge only under the authority already supplied for the task. Do not infer it
+from passing checks or introduce a new approval gate when it is already supplied.
 
 ## What a reviewer is checking
 
-Not style. Style is the linter's job.
+A reviewer checks the intended behavior, relevant failure paths, data/tenant
+boundaries and whether the evidence supports the claims. Source validation must
+not use production credentials or write to real user data. A live action needs
+its applicable authority and evidence. Keep implemented, locally verified,
+merged, deployed and observed results distinct.
 
-A reviewer checks that the change does what it says, that failure is handled, that nothing reaches a live account without an approved instruction, and that the record makes sense to somebody reading it in six months.
+## Tools and handoff
+
+Prefer a suitable CLI or connector; use browser automation for UI work and gaps.
+Batch independent reads, keep searches bounded and reuse results until inputs
+change. Avoid duplicating agent instructions, skills or external integrations.
+Read a relevant skill once and add a hook or MCP only for a demonstrated need.
+
+Finish with changed files, checks, limitations and the next authorized action.
+Keep detailed task evidence in its task or PR, not in persistent agent guidance.
+Archive unique work reversibly and remove linked worktrees through Git only
+after checking their commits and dirty files.

@@ -2,11 +2,9 @@
 
 <!-- One or two sentences. What is different after this merges? -->
 
-## Why
+## Task and ownership
 
-<!-- Link the issue. If there is no issue, explain why this is the exception. -->
-
-Closes #
+<!-- Link the issue or identify the user task. Name the base commit and owned paths. -->
 
 ## How it was verified
 
@@ -14,8 +12,8 @@ Closes #
 
 ## Checklist
 
-- [ ] A different person is reviewing this than wrote it
-- [ ] Tests cover the change, including the failure path
+- [ ] Independent review is identified, with its scope and limitations
+- [ ] Checks are appropriate to the change and their results are recorded
 - [ ] Nothing here writes to a live account without an approved instruction
 - [ ] No credentials, tokens or client data in the diff or the history
 - [ ] Documentation updated, or explicitly not needed
@@ -23,3 +21,7 @@ Closes #
 ## Risk and rollback
 
 <!-- What breaks if this is wrong, and how do we undo it? -->
+
+## Authority and next step
+
+<!-- Record existing merge/deployment authority and any remaining live verification. -->

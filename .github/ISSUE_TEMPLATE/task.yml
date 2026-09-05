@@ -23,3 +23,13 @@ body:
     id: outofscope
     attributes:
       label: Explicitly out of scope
+  - type: textarea
+    id: ownership
+    attributes:
+      label: Source and ownership
+      description: Target repository, current base commit and owned files. Identify overlapping work.
+  - type: textarea
+    id: authority
+    attributes:
+      label: Execution authority
+      description: Record the authority already supplied for implementation, merge, deployment or provider actions.
