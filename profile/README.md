@@ -27,4 +27,4 @@ Channel and brand strategy. Commission on media spend. Creative origination.
 
 ---
 
-Geneva and Bangalore · [detail-department.com](https://detail-department.com) · leon@detail-department.com
+Geneva and Bengaluru · [detail-department.com](https://detail-department.com) · leon@detail-department.com
